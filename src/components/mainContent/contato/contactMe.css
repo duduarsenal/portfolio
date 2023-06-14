@@ -1,0 +1,62 @@
+.contactme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: var(--background-b-t);
+    padding: 20px;
+    width: 70%;
+    border-radius: 3px;
+    border: 2px solid rgba(206, 108, 108, 0.2);
+}
+
+.title-contato{
+    font-weight: 500;
+    border-bottom: 2px solid rgba(206, 108, 108, 0.2);
+    line-height: 1;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.redes{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.link-contato{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.089);
+    background-color: var(--background-b-t);
+}
+
+.link-contato p{
+    font-size: 130% !important;
+}
+
+.icon-contato{
+    font-size: 250%;
+}
+
+.link-contato:hover .github{
+    color: rgb(124, 105, 231);
+}
+
+.link-contato:hover .linkedin{
+    color: rgb(127, 197, 255);
+}
+
+.link-contato:hover .whatsapp{
+    color: rgb(28, 177, 65);
+}

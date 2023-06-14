@@ -1,0 +1,34 @@
+.aboutme{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background-b-t);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 120%;
+    font-weight: 500;
+    width: 40%;
+}
+
+.foto-perfil{
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.sobre-mim{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: var(--background-b-t);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 120%;
+    font-weight: 500;
+}
