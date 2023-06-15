@@ -4,16 +4,16 @@
     align-items: center;
     justify-content: center;
     margin: 10px auto;
-    background-color: var(--background-b-t);
+    background-color: var(--background-black-t);
     padding: 20px;
     width: 70%;
     border-radius: 3px;
-    border: 2px solid rgba(206, 108, 108, 0.2);
+    border: 2px solid var(--border-red-t);
 }
 
 .title-contato{
     font-weight: 500;
-    border-bottom: 2px solid rgba(206, 108, 108, 0.2);
+    border-bottom: 2px solid var(--border-red-t);
     line-height: 1;
     margin-bottom: 10px;
     width: 50%;
@@ -38,7 +38,7 @@
     padding: 0 15px;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.089);
-    background-color: var(--background-b-t);
+    background-color: var(--background-black-t);
 }
 
 .link-contato p{
