@@ -6,8 +6,11 @@
 }
 
 header{
-    height: 8vh;
+    position: fixed;
+    width: 100%;
+    height: 50px;
     background-color: rgb(32, 32, 32);
+    z-index: 3;
 }
 
 .headerLinks{
@@ -22,18 +25,20 @@ header{
 .headerLinks div{
     height: 100%;
     display: flex;
-    color: white;
+    /* color: whitesmoke; */
     align-items: center;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .header-icon{
     font-size: 160%;
+    height: 100%;
 }
 
 .headerLinks a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,4 +49,11 @@ header{
 
 .headerLinks div:hover{
     background-color: #9e1f278c;
+}
+
+.header-text{
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }

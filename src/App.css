@@ -1,6 +1,7 @@
 *{
     --background-black-t: rgba(32, 32, 32, 0.500);
     --border-red-t: rgba(206, 108, 108, 0.2);
+    --background-hover-black: rgba(32, 32, 32, 0.900);
 }
 
 .all{
@@ -21,7 +22,7 @@
     z-index: 1;
 }
 .conteudo{
-    color: white;
+    color: whitesmoke;
     position: relative;
     z-index: 2;
 }

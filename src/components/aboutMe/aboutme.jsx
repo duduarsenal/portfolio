@@ -4,9 +4,9 @@ import Typed from 'typed.js';
 
 export default function AboutMe() {
     return (
-        <div className='aboutme'>
+        <div className='aboutme' id='aboutme'>
             <div className='perfil'>
-                <img src="src/assets/diablo.jpg" alt="" className='foto-perfil'/>
+                <img src="src/assets/dudu.jpg" alt="" className='foto-perfil'/>
                 <div className="nome-perfil">
                     <p className='nome-perfil'>Eduardo Souza</p>
                     <p>Desenvolvedor Web JR</p>

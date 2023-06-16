@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 
 export default function ContactMe() {
     return (
-        <div className='contactme'>
+        <div className='contactme' id='contactme'>
             <h1 className='title-contato'>Entre em contato comigo!</h1>
             <div className="redes">
                 <div className="link-contato">
