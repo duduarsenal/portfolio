@@ -8,15 +8,14 @@ import MyProjects from './components/myProjects/myProjects'
 export default function App() {
   return (
     <div className='all'>
-      <img src="src/assets/redspace vert.jpg" className='backimg'/>
+      <img src="https://ik.imagekit.io/duduzinvdlk/background/redspace_vert.jpg" className='backimg'/>
       <div className='conteudo'>
         <Header />
-        <p style={{paddingTop: '60px'}}></p>
-        <AboutMe />
-        <MeusConhecimentos />
+        <div className='content1-site'>
+          <AboutMe />
+          <MeusConhecimentos />
+        </div>
         <MyProjects />
-        <ContactMe />
-        <ContactMe />
         <ContactMe />
       </div>
     </div>

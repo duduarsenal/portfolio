@@ -1,39 +1,6 @@
-.aboutme{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.perfil{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--background-black-t);
-    padding: 10px;
-    border-radius: 3px;
-    font-size: 120%;
-    font-weight: 500;
-    width: 40%;
-}
-
-.foto-perfil{
-    width: 150px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.418);
-    filter: saturate(120%);
-}
-
-.nome-perfil{
-    text-align: center;
-}
-
-.sobre-mim{
-    width: 55%;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background-color: var(--background-black-t);
-    padding: 10px;
-    border-radius: 3px;
-    font-size: 120%;
-    font-weight: 500;
+@media (max-width: 380px){
+    .sobre-mim{
+        font-size: 100% !important;
+        min-width: 300px
+    }
 }

@@ -1,31 +1,8 @@
-.myprojects{
-    width: 100%;
-    padding: 0 20px;
-}
-
-.project-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.myprojects-title{
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-.projects-line1, .projects-line2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-
 .projects{
     background-color: var(--background-black-t);
     padding: 15px 20px;
     width: 45%;
-    height: 535px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +11,8 @@
     border: 2px solid var(--border-red-t);
     transition: all .3s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .projects:hover{
@@ -56,4 +35,10 @@
     width: 45%;
     text-align: center;
     border-radius: 10px;
+}
+
+@media (max-width: 380px){
+    .project-text{
+        font-size: 90%;
+    }
 }

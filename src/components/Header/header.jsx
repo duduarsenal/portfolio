@@ -8,27 +8,27 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
   return (
-    <header>
-      <div className="headerLinks">
-        <Link to="aboutme" smooth={true} duration={400} offset={-60}>
+    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 mb-[10px]">
+      <div className="md:flex-row headerLinks h-[100%] max-w-[1280px] flex flex-col items-center justify-evenly m-auto">
+        <Link to="aboutme" smooth={true} duration={400}>
           <div>
             <BsFillFileEarmarkPersonFill className="header-icon" />
             <span className="header-text">Sobre mim</span>
           </div>
         </Link>
-        <Link to="meusconhecimentos" smooth={true} duration={400} offset={-50}>
+        <Link to="meusconhecimentos" smooth={true} duration={400}>
           <div>
           <BiBookBookmark className="header-icon" />
-            <span className="header-text">Conhecimentos</span>
+            <span className="header-text">Tecnologias</span>
           </div>
         </Link>
-        <Link to="myprojects" smooth={true} duration={400} offset={-60}>
+        <Link to="myprojects" smooth={true} duration={400}>
           <div>
           <GoProject className="header-icon" />
             <span className="header-text">Projetos</span>
           </div>
         </Link>
-        <Link to="contactme" smooth={true} duration={400} offset={-60}>
+        <Link to="contactme" smooth={true} duration={400}>
           <div>
           <MdPermContactCalendar className="header-icon" />
             <span className="header-text">Contato</span>
