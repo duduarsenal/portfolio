@@ -1,0 +1,23 @@
+#seta_up{
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.setaUp{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color:#ff8383b9;;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-size: 230%;
+}
+
+.setaUp:hover{
+    background-color: #ff0000;
+    transition: all .3s ease-in-out;
+}

@@ -55,10 +55,10 @@ export default function MeusConhecimentos() {
             </div>
           </div>
         </div>
-        <div className="queroaprender lg:w-[95%] md:w-[50%] w-[85%] flex flex-col items-center justify-center min-w-[300px]">
+        <div className="queroaprender lg:w-[80%] md:w-[50%] w-[85%] flex flex-col items-center justify-center min-w-[300px]">
           <h1 className="titulo-linguagens">Pretendo Estudar</h1>
-          <div className="linguagens-container">
-            <div className="flex-div flex flex-col lg:flex-row justify-around lg:w-[60%] w-max px-[10px] items-center">
+          <div className="linguagens-container flex flex-row lg:flex-col items-center">
+            <div className="flex-div flex flex-col lg:flex-row justify-around my-[10px] lg:w-[80%] w-max px-[10px] items-center">
               <div className="linguagens">
                 <FaNodeJs className="nodejs icon-lang" />
                 <p className="nodejs">NodeJS</p>
@@ -80,7 +80,7 @@ export default function MeusConhecimentos() {
                 <p className="angular">Angular</p>
               </div>
             </div>
-            <div className="flex-div flex justify-around flex-col lg:flex-row lg:w-[50%] w-max px-[10px]">
+            <div className="my-[10px] flex-div flex justify-around flex-col lg:flex-row lg:w-[80%] w-max px-[10px]">
               <div className="linguagens">
                 {/* <DiPython className='phyton icon-know'/> */}
                 <img
@@ -92,7 +92,7 @@ export default function MeusConhecimentos() {
                 <p className="phyton">Phyton</p>
               </div>
               <div className="linguagens">
-                <i class="csharp devicon-csharp-plain icon-lang"></i>
+                <i className="csharp devicon-csharp-plain icon-lang"></i>
                 <p className="csharp">CSharp (C#)</p>
               </div>
               <div className="linguagens">

@@ -4,6 +4,7 @@ import AboutMe from './components/aboutMe/aboutme'
 import MeusConhecimentos from './components/meusConhecimentos/meusConhecimentos'
 import ContactMe from './components/contactMe/contactMe'
 import MyProjects from './components/myProjects/myProjects'
+import SetaUp from './components/setaUp/setaUp'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         </div>
         <MyProjects />
         <ContactMe />
+        <SetaUp />
       </div>
     </div>
   )
