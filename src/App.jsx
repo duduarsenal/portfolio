@@ -5,6 +5,7 @@ import MeusConhecimentos from './components/meusConhecimentos/meusConhecimentos'
 import ContactMe from './components/contactMe/contactMe'
 import MyProjects from './components/myProjects/myProjects'
 import SetaUp from './components/setaUp/setaUp'
+import Timeline from './components/timeline/timeline'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Header />
         <div className='content1-site'>
           <AboutMe />
+          <Timeline />
           <MeusConhecimentos />
         </div>
         <MyProjects />

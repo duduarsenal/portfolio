@@ -8,7 +8,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
   return (
-    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 mb-[10px]">
+    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 mb-[10px]" id="headerTop">
       <div className="md:flex-row headerLinks h-[100%] max-w-[1280px] flex flex-col items-center justify-evenly m-auto">
         <Link to="aboutme" smooth={true} duration={400}>
           <div>

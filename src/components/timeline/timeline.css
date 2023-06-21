@@ -1,0 +1,47 @@
+/* className="h-[180px] w-[200px] justify-center flex items-center border-2 border-solid border-black" */
+
+.itemTimeLine{
+    position: relative;
+}
+
+.timelineTop{
+    border-bottom: 3px solid red;
+}
+
+.timelineBottom{
+    border-top: 3px solid red;
+}
+.timelineTop .timeline-button{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    scale: 0.2;
+    border-bottom: 100px solid red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-bottom: -45px;
+}
+
+.timelineBottom .timeline-button{
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    scale: 0.2;
+    border-top: 100px solid red;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-top: -45px;
+}
+
+.timeline-descricao{
+    width: 200px;
+    height: 180px;
+}

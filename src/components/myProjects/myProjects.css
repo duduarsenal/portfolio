@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-evenly;
     border-radius: 5px;
     border: 2px solid var(--border-red-t);
     transition: all .3s ease-in-out;
