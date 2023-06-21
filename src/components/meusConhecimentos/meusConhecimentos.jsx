@@ -1,5 +1,5 @@
 import React from "react";
-import "./meusconhecimentos.css";
+import "./meusConhecimentos.css";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiRuby, DiAngularSimple } from "react-icons/di";
 import { SiJavascript, SiPhp, SiTypescript, SiCplusplus } from "react-icons/si";
