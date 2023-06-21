@@ -1,5 +1,5 @@
 import React from 'react';
-import './contactme.css';
+import './contactMe.css';
 import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 
 export default function ContactMe() {
