@@ -1,47 +1,141 @@
 /* className="h-[180px] w-[200px] justify-center flex items-center border-2 border-solid border-black" */
 
-.itemTimeLine{
-    position: relative;
+.timeline{
+    --red-timeline: rgb(255, 45, 45);
 }
 
 .timelineTop{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(185, 185, 185);
 }
 
-.timelineBottom{
-    border-top: 3px solid red;
+.itemTimeLine{
+    position: relative;
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
-.timelineTop .timeline-button{
+
+.timelineTop li:nth-child(odd):before{
+    content: '';
+    position: absolute;
     bottom: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    scale: 0.2;
-    border-bottom: 100px solid red;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    margin-bottom: -45px;
+    margin-bottom: -18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: var( --red-timeline);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px black;
 }
 
-.timelineBottom .timeline-button{
+.timelineTop li:nth-child(even):before{
+    content: '';
+    position: absolute;
     top: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    scale: 0.2;
-    border-top: 100px solid red;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    margin-top: -45px;
+    margin-top: 2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: var( --red-timeline);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px black;
 }
 
-.timeline-descricao{
-    width: 200px;
-    height: 180px;
+.timelineTop li:nth-child(even){
+    margin-bottom: -400px;
+}  
+
+.title-timeline{
+    text-align: center;
+    font-weight: 600;
+    margin: 15px;
+    color: rgb(255, 245, 245);
+    padding: 0 10px;
+    background-color: var(--red-timeline);
+    border-radius: 10px;
+} 
+
+.desc-timeline{
+    text-align: center;
+}
+
+.timelineTop li:nth-child(odd){
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.mytimeline-title{
+    font-size: 180%;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1;
+    border-bottom: 3px solid var(--border-red-t);
+    width: 35%;
+    text-align: center;
+    border-radius: 10px
+}
+
+@media (max-width: 964px){
+    .timeline-content{
+        min-width: 300px !important;
+        padding-bottom: 10px; 
+    }
+    .timelineTop li:nth-child(even):before{
+        top: 50%;
+        left: 0 !important;
+    }
+    .timelineTop li:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: 2px;
+        left: 0 !important;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background-color: var( --red-timeline);
+        border-radius: 50%;
+        box-shadow: 0 0 10px 1px black;
+    }
+    .timelineTop{
+        flex-direction: column;
+        border-bottom: 0;
+        border-left: 3px solid rgb(185, 185, 185);
+        height: max-content;
+        margin-bottom: 0 !important;
+        width: 90% !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .timelineTop li:nth-child(even){
+        margin-bottom: 10px;
+    }
+    .itemTimeLine{
+        overflow: hidden;
+        margin: 10px 0;
+        background-color: rgba(255, 93, 93, 0.15);
+        padding: 0 15px;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 120px;
+        height: max-content;
+        flex-direction: row !important;
+        justify-content: flex-start;
+    }
+    .title-timeline{
+        width: 100px;
+        font-size: 100%;
+        text-align: center;
+        color: rgb(255, 245, 245);
+        background-color: var(--red-timeline);
+        border-radius: 10px;
+    }
+    .desc-timeline{
+        width: 75%;
+    }
 }
