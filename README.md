@@ -2,6 +2,6 @@
 
 <Esse é meu portfólio>
 
-https://portofoliodudu.vercel.app
+https://portfoliodudu.vercel.app
 
 </Bem Vindo>
