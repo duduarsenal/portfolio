@@ -1,34 +1,45 @@
 import React from "react";
-import './myProjects.css'
+import BoxProjects from "./boxProjects/boxProjects";
+import LfMarketing from '../../assets/lfmarketing.png'
 
-export default function MyProjects(){
-    return(
+export default function MyProjects() {
+    return (
         <div className="myprojects w-[100%] max-w-[1360px] m-auto">
-            <div className="flex flex-col">
+            <div className="flex flex-wrap justify-center">
                 <h1 className="text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">Meus Projetos</h1>
-                <div className="flex flex-col md:flex-row items-center justify-around my-[5px] mx-0">
-                    <a className="dudureceitas projects md:w-[48%] w-[100%] md:my-0 my-[10px] sm:px-[20px] px-[10px] min-w-[300px] md:h-[570px] h-max" href="https://dudureceitas.surge.sh" target="_blank">
-                            <h1 className="project-title md:w-[45%] w-[100%]">Dudu Receitas</h1>
-                            <img className="project-img" src="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png" alt="Site de Receitas" />
-                            <p className="project-text">"Dudu Receitas" foi meu primeiro desenvolvimento. Neste projeto, me concentrei em treinar o uso de JAVASCRIPT para criar funções, estruturas, laços e uma forma de login/autenticação usando localStorage.
-                            </p>
-                            <span className="tecnoUsadas text-[#FFC000] text-[120%] font-semibold">Tecnologias utilizadas: HTML, CSS, JAVASCRIPT</span>
-                    </a>
-                    <a className="ohanacestas projects md:w-[48%] w-[100%] md:my-0 my-[10px] sm:px-[20px] px-[10px] min-w-[300px] md:h-[570px] h-max" href="https://ohanacestas.com.br" target="_blank">
-                        <h1 className="project-title md:w-[45%] w-[100%]">Ohana Cestas</h1>
-                        <img className="project-img" src="https://ik.imagekit.io/duduzinvdlk/projetos/ohanacestas.png" alt="Ohana Cestas Personalizadas" />
-                        <p className="project-text">Projeto voltado para a divulgação da "Ohana Cestas", empresa de criação de cestas personalizadas, voltada para o público em geral. Foquei em deixar o design limpo e intuitivo,  com foco na responsividade do site.
-                        </p>
-                        <span className="tecnoUsadas text-[#d5a3e6] text-[120%] font-semibold">Tecnologias utilizadas: HTML, CSS, JAVASCRIPT</span>
-                    </a>
-                </div>
-                <div className="flex flex-col md:flex-row items-center justify-around my-[5px] mx-0">
-                    <a className="emAndamento projects md:w-[48%] w-[100%] md:my-0 my-[10px] sm:px-[20px] px-[10px] min-w-[300px]" href="#">
-                        <h1 className="project-title md:w-[45%] w-[100%]">Em Andamento</h1>
-                        <img className="project-img" src="https://ik.imagekit.io/duduzinvdlk/projetos/inprogress?updatedAt=1686884142075" style={{width: '70%'}} alt="Projetos em andamento" />
-                        <p className="project-text text-[#ff726f] font-semibold">Projetos ainda em andamento: Portfólio, CRUD com PHP/MYSQL, CRUD ReactJS/NodeJS.</p>
-                    </a>
-                </div>
+                <BoxProjects
+                    projectLink="https://dudureceitas.surge.sh"
+                    projectName="Dudu Receitas"
+                    projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png"
+                    projectDesc={"\"Dudu Receitas\" foi meu primeiro desenvolvimento. Neste projeto, me concentrei em treinar o uso de JAVASCRIPT para criar funções, estruturas, laços e uma forma de login/autenticação usando localStorage."}
+                    projectTech="Tecnologias utilizadas: HTML5, CSS3 e JavaScript"
+                    projectColor="#FFC000"
+                />
+                <BoxProjects
+                    projectLink="https://ohanacestas.com.br"
+                    projectName="Ohana Cestas"
+                    projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/ohanacestas.png"
+                    projectDesc={"Projeto voltado para a divulgação da \"Ohana Cestas\", empresa de criação de cestas personalizadas, voltada para o público em geral. Foquei em deixar o design limpo e intuitivo,  com foco na responsividade do site."}
+                    projectTech="Tecnologias utilizadas: HTML5, CSS3 e JavaScript"
+                    projectColor="#d5a3e6"
+                />
+                <BoxProjects
+                    projectLink="https://lfmarketing.vercel.app"
+                    projectName="LF Marketing"
+                    projectImg={LfMarketing}
+                    projectDesc={"Projeto feito para vaga de Desenvolvedor Web, na qual eu teria que desenvolver uma landing page de alta conversão, possui um design minimalista e intuitivo, com rolamento suave e cores/botões chamativos"}
+                    projectTech="Tecnologias utilizadas: Vite + ReactJS e TailWind CSS"
+                    projectColor="#be2528"
+                />
+                <BoxProjects
+                    projectLink="#"
+                    projectName="Em Andamento"
+                    projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/inprogress"
+                    projectDesc="Projetos ainda em andamento: Portfólio, CRUD com PHP/MYSQL, CRUD ReactJS/NodeJS."
+                    projectTech=""
+                    projectImgWidth="80%"
+                    projectColor="#ff726f"
+                />
             </div>
         </div>
     )

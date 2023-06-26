@@ -11,7 +11,7 @@ export default function MyKnowledge() {
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center font-semibold text-[200%]">Tecnologias</h1>
         <div className="w-[100%] flex flex-row sm:flex-col md:flex-row justify-evenly items-center h-max">
-          <ContainerTech infos={<Proficient />} infoTitle="Proficiente"/>
+          <ContainerTech infos={<Proficient />} infoTitle="Tenho conhecimento"/>
           <ContainerTech infos={<Learning />} infoTitle="Aprendendo"/>
         </div>
         <div className="w-[100%] flex max-w-[1360px]">
