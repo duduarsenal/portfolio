@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContainerTecnologies(props) {
+function ContainerTech(props) {
     return (
         <>
             <div className="flex flex-col items-center w-[100%] h-max bg-black-transparent py-2.5 m-2 rounded-sm border-2 border-red-transparent">
@@ -13,4 +13,4 @@ function ContainerTecnologies(props) {
     );
 }
 
-export default ContainerTecnologies;
+export default ContainerTech;
