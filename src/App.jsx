@@ -1,11 +1,10 @@
 import './App.css'
 import Header from './components/Header/header'
-import AboutMe from './components/aboutMe/aboutme'
-import MeusConhecimentos from './components/meusConhecimentos/meusConhecimentos'
-import ContactMe from './components/contactMe/contactMe'
+import About from './components/About/about'
+import MyKnowledge from './components/myKnowledge/myKnowledge'
 import MyProjects from './components/myProjects/myProjects'
+import ContactMe from './components/contactMe/contactMe'
 import SetaUp from './components/setaUp/setaUp'
-import Timeline from './components/timeline/timeline'
 
 export default function App() {
   return (
@@ -13,10 +12,9 @@ export default function App() {
       <img src="https://ik.imagekit.io/duduzinvdlk/background/redspace_vert.jpg" className='backimg'/>
       <div className='conteudo'>
         <Header />
-        <div className='content1-site'>
-          <AboutMe />
-          <Timeline />
-          <MeusConhecimentos />
+        <div className='content1-site flex items-center'>
+          <About />
+          <MyKnowledge />
         </div>
         <MyProjects />
         <ContactMe />
