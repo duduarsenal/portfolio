@@ -13,7 +13,7 @@ export default function MyProjects() {
                     projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png"
                     projectDesc={"\"Dudu Receitas\" foi meu primeiro desenvolvimento. Neste projeto, me concentrei em treinar o uso de JAVASCRIPT para criar funções, estruturas, laços e uma forma de login/autenticação usando localStorage."}
                     projectTech="Tecnologias utilizadas: HTML5, CSS3 e JavaScript"
-                    projectColor="#FFC000"
+                    projectColor="text-[#FFC000]"
                 />
                 <BoxProjects
                     projectLink="https://ohanacestas.com.br"
@@ -21,7 +21,7 @@ export default function MyProjects() {
                     projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/ohanacestas.png"
                     projectDesc={"Projeto voltado para a divulgação da \"Ohana Cestas\", empresa de criação de cestas personalizadas, voltada para o público em geral. Foquei em deixar o design limpo e intuitivo,  com foco na responsividade do site."}
                     projectTech="Tecnologias utilizadas: HTML5, CSS3 e JavaScript"
-                    projectColor="#d5a3e6"
+                    projectColor="text-[#d5a3e6]"
                 />
                 <BoxProjects
                     projectLink="https://lfmarketing.vercel.app"
@@ -29,7 +29,7 @@ export default function MyProjects() {
                     projectImg={LfMarketing}
                     projectDesc={"Projeto feito para vaga de Desenvolvedor Web, na qual eu teria que desenvolver uma landing page de alta conversão, possui um design minimalista e intuitivo, com rolamento suave e cores/botões chamativos"}
                     projectTech="Tecnologias utilizadas: Vite + ReactJS e TailWind CSS"
-                    projectColor="#be2528"
+                    projectColor="text-[#be2528]"
                 />
                 <BoxProjects
                     projectLink="#"
@@ -38,7 +38,7 @@ export default function MyProjects() {
                     projectDesc="Projetos ainda em andamento: Portfólio, CRUD com PHP/MYSQL, CRUD ReactJS/NodeJS."
                     projectTech=""
                     projectImgWidth="80%"
-                    projectColor="#ff726f"
+                    projectColor="text-[#ff726f]"
                 />
             </div>
         </div>

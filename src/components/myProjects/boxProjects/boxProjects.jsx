@@ -7,7 +7,7 @@ function BoxProjects(props) {
                 <h1 className="md:w-[60%] w-[100%] text-[180%] mb-2.5 font-[500] leading-none border-b-4 border-red-transparent text-center rounded-md">{props.projectName}</h1>
                 <img className={`w-[${props.projectImgWidth}] rounded my-2.5`} src={props.projectImg} alt="Site de Receitas" />
                 <p className="sm:text-[100%] text-[90%]">{props.projectDesc}</p>
-                <span className={`text-[${props.projectColor}] text-[120%] font-semibold`}>{props.projectTech}</span>
+                <span className={`${props.projectColor} text-[120%] font-semibold`}>{props.projectTech}</span>
             </a>
         </>
     );
