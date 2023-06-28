@@ -139,3 +139,10 @@
         width: 75%;
     }
 }
+
+@media (max-width: 640px){
+    .mytimeline-title{
+        width: 80%;
+        font-size: 160% !important;
+    }
+}

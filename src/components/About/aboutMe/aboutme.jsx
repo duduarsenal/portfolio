@@ -13,7 +13,7 @@ export default function AboutMe() {
                 </div>
             </div>
 
-            <div className="m-auto md:m-auto md:w-[55%] my-[10px] sobre-mim w-[95%] min-h-[170px] h-max flex items-center px-[30px] text-center rounded-[3px] text-[120%] font-medium bg-black-transparent">
+            <div className="m-auto sm:py-0 py-5 md:m-auto md:w-[55%] my-[10px] sobre-mim w-[95%] min-h-[170px] h-max flex items-center px-[30px] text-center rounded-[3px] text-[120%] font-medium bg-black-transparent">
                 <p>Olá, me chamo Eduardo, tenho 22 anos e sou um jovem apaixonado por tecnologia e desenvolvimento, quero entrar na área de programação para aprimorar minhas habilidades e contribuir para projetos maiores e mais desafiadores.
                 </p>
             </div>

@@ -6,7 +6,7 @@ export default function MyProjects() {
     return (
         <div className="myprojects w-[100%] max-w-[1360px] m-auto">
             <div className="flex flex-wrap justify-center">
-                <h1 className="text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">Meus Projetos</h1>
+                <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">Meus Projetos</h1>
                 <BoxProjects
                     projectLink="https://dudureceitas.surge.sh"
                     projectName="Dudu Receitas"
@@ -36,7 +36,7 @@ export default function MyProjects() {
                     projectName="Em Andamento"
                     projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/inprogress"
                     projectDesc="Projetos ainda em andamento: Portfólio, CRUD com PHP/MYSQL, CRUD ReactJS/NodeJS."
-                    projectTech=""
+                    projectTech=" "
                     projectImgWidth="80%"
                     projectColor="text-[#ff726f]"
                 />

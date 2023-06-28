@@ -3,7 +3,7 @@ import "./setaUp.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export default function SetaUp() {
+export default function SetaUp(props) {
   const setaUp = () => {
     window.scrollTo({
       top: 0,
@@ -13,7 +13,7 @@ export default function SetaUp() {
 
   return (
     <div className="scrollToTop">
-      <Link to="headerTop" smooth={true} duration={400}>
+      <Link to="aboutme" smooth={true} offset={props.view_width} duration={400}>
         <div id="seta_up">
           <AiOutlineArrowUp className="setaUp" />
         </div>
