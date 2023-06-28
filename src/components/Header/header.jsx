@@ -9,7 +9,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Header() {
   return (
     <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 mb-[10px]" id="headerTop">
-      <div className="md:flex-row headerLinks h-[100%] max-w-[1360px] flex flex-col items-center justify-between m-auto">
+      <div className="md:flex-row headerLinks h-[100%] max-w-[1360px] flex flex-col items-center justify-between m-auto px-[20px]">
         <Link to="aboutme" smooth={true} duration={400}>
           <div>
             <BsFillFileEarmarkPersonFill className="header-icon" />
