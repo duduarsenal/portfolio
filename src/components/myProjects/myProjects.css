@@ -1,0 +1,25 @@
+.rec-pagination{
+    display: none !important;
+}
+
+.rec-arrow{
+    background-color: #ff8383b9 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.rec-arrow:hover{
+    background-color: #ff0000 !important;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 420px){
+    .rec-arrow{
+        z-index: 1;
+    }
+    .rec-arrow-left{
+        margin-right: -55px;
+    }
+    .rec-arrow-right{
+        margin-left: -55px;
+    }
+}
