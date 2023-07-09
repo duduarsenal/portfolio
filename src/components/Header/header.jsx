@@ -46,6 +46,9 @@ export default function Header(props) {
             <span className="header-text">Tecnologias</span>
           </div>
         </Link>
+        <div className="meuport-on flex justify-center items-center px-3">
+            <BsCodeSlash className="header-icon text-[310%] text-[#FF2D2D]"/>
+        </div>
         <Link to="myprojects" smooth={true} duration={400} offset={props.view_width} onClick={updateMenu}>
           <div>
             <GoProject className="header-icon" />

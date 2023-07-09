@@ -28,7 +28,7 @@
     font-size: 120%;
 }
 
-.headerLinks div:hover{
+.headerLinks div:not(:nth-child(3)):hover{
     background-color: #9e1f278c;
 }
 
@@ -39,9 +39,11 @@
     height: 100%;
 }
 
+
 .meuport{
     display: none !important;
 }
+
 
 @media (min-width: 768px){
     .navbar{
@@ -73,6 +75,9 @@
     }
     .meuport{
         display: flex !important;
+    }
+    .meuport-on{
+        display: none !important;
     }
     .header-icon{
         color: #FF2D2D;
