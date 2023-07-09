@@ -14,10 +14,8 @@ export default function App() {
   useEffect(() => {
     if(window.innerWidth > 768){
       setViewWidth(0)
-      console.log("-55 > 768px")
     } else {
       setViewWidth(-55)
-      console.log("0 < 768px")
     }
   })
   return (
