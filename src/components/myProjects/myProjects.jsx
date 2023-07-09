@@ -34,7 +34,7 @@ export default function MyProjects() {
             <BoxProjects
               projectLink="https://ohanacestas.com.br"
               projectName="Ohana Cestas"
-              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/ohanacestas.png?updatedAt=1688864814265"
+              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/ohanacestas.png?updatedAt=1688865467291"
               projectDesc={
                 'Projeto voltado para a divulgação da "Ohana Cestas", empresa de criação de cestas personalizadas, voltada para o público em geral. Foquei em deixar o design limpo e intuitivo,  com foco na responsividade do site.'
               }
