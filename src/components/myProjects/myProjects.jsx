@@ -56,6 +56,17 @@ export default function MyProjects() {
           </Item>
           <Item>
             <BoxProjects
+              projectLink="https://dudulinks.vercel.app"
+              projectName="Meu Linktree"
+              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/linktree_project.jpg"
+              projectDesc="Projeto desenvolvido durante o Curso Discover da Rocketseat, tive maior foco em um design limpo e atraente, com cores chamativas e responsividade, foi feito em razão da necessidade de ter um Agregador de Links Online"
+              projectTech="HTML5, CSS3, JavaScript"
+              projectImgWidth="100%"
+              projectColor="text-[#c5eaf9]"
+            />
+          </Item>
+          <Item>
+            <BoxProjects
               projectLink="#"
               projectName="Em Andamento"
               projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/inprogress"
