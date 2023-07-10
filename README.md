@@ -5,8 +5,7 @@ Bem vindo ao meu curriculo online!! Aqui você vai encontrar um resumo sobre mim
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
@@ -24,10 +23,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - TailWind/CSS3
 - Git e Github
 - Figma
-
-## 💻 Projeto
-
-Portfólio feito em razão da necessidade de mostrar as pessoas online meus conhecimentos e meus projetos mais atuais.
 
 ---
 
