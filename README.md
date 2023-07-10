@@ -6,14 +6,14 @@ Bem vindo ao meu curriculo online!! Aqui você vai encontrar um resumo sobre mim
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
 <br>
 
 <p align="center">
-  <img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957575637" width="90%">
+  <img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957575637" width="100%">
 </p>
 
 ## 🚀 Tecnologias
