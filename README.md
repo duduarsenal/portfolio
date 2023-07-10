@@ -12,8 +12,8 @@ Bem vindo ao meu curriculo online!! Aqui você vai encontrar um resumo sobre mim
 
 <br>
 
-<p align="center">
-  <a href="https://portfoliodudu.vercel.app"><img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957575637" width="100%"></a>
+<p align="center" title="Abrir portfólio">
+  <a href="https://portfoliodudu.vercel.app" target="_blank"><img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957575637" width="100%"></a>
 </p>
 
 ## 🚀 Tecnologias
