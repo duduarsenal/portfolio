@@ -13,7 +13,7 @@ Bem vindo ao meu curriculo online!! Aqui você vai encontrar um resumo sobre mim
 <br>
 
 <p align="center">
-  <img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957486055" width="100%">
+  <img alt="Preview Portfólio" src="https://ik.imagekit.io/duduzinvdlk/preview-portfolio?updatedAt=1688957575637" width="90%">
 </p>
 
 ## 🚀 Tecnologias
