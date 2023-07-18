@@ -30,8 +30,8 @@
     color: rgb(127, 197, 255);
 }
 
-.link-contato:hover .whatsapp{
-    color: rgb(28, 177, 65);
+.link-contato:hover .instagram{
+    color: #E1306C;
 }
 
 @media (max-width: 768px) {

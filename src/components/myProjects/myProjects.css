@@ -12,14 +12,20 @@
     transition: all .3s ease-in-out;
 }
 
-@media (max-width: 420px){
+@media (max-width: 768px){
     .rec-arrow{
-        z-index: 1;
+        display: none;
     }
-    .rec-arrow-left{
-        margin-right: -55px;
+    .rec-pagination{
+        display: initial !important;
+        margin-top: 0.5rem !important;
     }
-    .rec-arrow-right{
-        margin-left: -55px;
+    .rec-dot{
+        box-shadow: 0 0 0px 2px rgb(255, 74, 74, 0.5) !important;
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+    }
+    .rec-dot_active{
+        background-color: rgb(255, 74, 74) !important;
     }
 }

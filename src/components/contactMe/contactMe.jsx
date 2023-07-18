@@ -1,6 +1,6 @@
 import React from 'react';
 import './contactMe.css';
-import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
+import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
 export default function ContactMe() {
     return (
@@ -15,9 +15,9 @@ export default function ContactMe() {
                     <BsLinkedin className='linkedin icon-contato'/>
                     <p className="linkedin">Linkedin</p>
                 </a>
-                <a className="link-contato" href='https://wa.link/d2pymh' target='_blank'>
-                    <BsWhatsapp className='whatsapp icon-contato'/>
-                    <p className='whatsapp'>Whatsapp</p>
+                <a className="link-contato" href='https://www.instagram.com/eduardo.s.s13/' target='_blank'>
+                    <BsInstagram className='instagram icon-contato'/>
+                    <p className='instagram'>Instagram</p>
                 </a>
             </div>
         </div>
