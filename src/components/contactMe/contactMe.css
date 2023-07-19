@@ -34,8 +34,25 @@
     color: #E1306C;
 }
 
+.link-rede{
+    display: flex;
+    position: absolute;
+    width: max-content;
+    bottom: 0;
+    opacity: 0;
+    margin-bottom: -1.75rem;
+    transition: all .4s ease-in-out;
+}
+
+.link-contato:hover ~ p{
+    opacity: 1 !important;
+}
+
 @media (max-width: 768px) {
     .link-contato{
         margin: 10px;
+    }
+    .link-contato:hover ~ p{
+        opacity: 0 !important;
     }
 }
