@@ -2,6 +2,7 @@
 
 .timeline{
     --red-timeline: rgb(255, 45, 45);
+    --heightTL: 210px;
 }
 
 .timelineTop{
@@ -11,7 +12,7 @@
 .itemTimeLine{
     position: relative;
     width: 20%;
-    height: 200px;
+    height: var(--heightTL);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +36,6 @@
 .timelineTop li:nth-child(even):before{
     content: '';
     position: absolute;
-    top: 0;
     margin-top: 2px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@
 }
 
 .timelineTop li:nth-child(even){
-    margin-bottom: -400px;
+    padding-top: var(--heightTL);
 }  
 
 .title-timeline{
@@ -62,6 +62,7 @@
 
 .desc-timeline{
     text-align: center;
+    width: 160%;
 }
 
 .timelineTop li:nth-child(odd){
@@ -71,7 +72,6 @@
 
 .mytimeline-title{
     font-size: 180%;
-    margin-bottom: 10px;
     font-weight: 500;
     line-height: 1;
     border-bottom: 3px solid var(--border-red-t);
@@ -112,14 +112,11 @@
         justify-content: center !important;
         align-items: center;
     }
-    .timelineTop li:nth-child(even){
-        margin-bottom: 10px;
-    }
     .itemTimeLine{
         overflow: hidden;
         margin: 10px 0;
         background-color: rgba(255, 93, 93, 0.15);
-        padding: 0 15px;
+        padding: .5rem 15px !important;
         border-radius: 5px;
         width: 100%;
         min-height: 120px;
@@ -144,5 +141,8 @@
     .mytimeline-title{
         width: 80%;
         font-size: 160% !important;
+    }
+    .itemTimeLine{
+        flex-direction: column !important;
     }
 }
