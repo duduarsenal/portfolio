@@ -38,7 +38,7 @@ export default function MyProjects() {
               projectDesc={
                 'Projeto voltado para a divulgação da "Ohana Cestas", empresa de criação de cestas personalizadas, voltada para o público em geral. Foquei em deixar o design limpo e intuitivo,  com foco na responsividade do site.'
               }
-              projectTech="HTML5, CSS3, JavaScript"
+              projectTech="ReactJs, Tailwind CSS"
               projectColor="text-[#d5a3e6]"
             />
           </Item>
@@ -50,7 +50,7 @@ export default function MyProjects() {
               projectDesc={
                 "Projeto feito para vaga de Desenvolvedor Web, na qual eu teria que desenvolver uma landing page de alta conversão, possui um design minimalista e intuitivo, com rolamento suave e cores/botões chamativos"
               }
-              projectTech={"ReactJS,TailWind"}
+              projectTech="ReactJS, Tailwind CSS"
               projectColor="text-[#be2528]"
             />
           </Item>
