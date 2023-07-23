@@ -7,6 +7,7 @@ import ContactMe from './components/contactMe/contactMe'
 import SetaUp from './components/setaUp/setaUp'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [view_width, setViewWidth] = useState(0)
@@ -29,6 +30,7 @@ export default function App() {
         </div>
         <MyProjects />
         <ContactMe />
+        <Analytics />
         <SetaUp view_width={view_width}/>
       </div>
     </div>
