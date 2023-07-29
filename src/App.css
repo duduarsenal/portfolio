@@ -28,7 +28,7 @@
     z-index: 1;
 }
 .conteudo{
-    background-image: url('src/assets/grid.svg');
+    background-image: url('/src/assets/grid.svg');
     color: whitesmoke;
     position: relative;
     z-index: 2;
