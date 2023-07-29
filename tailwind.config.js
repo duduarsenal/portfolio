@@ -11,7 +11,11 @@ export default {
       'hover-black': 'rgba(32, 32, 32, 0.900)',
       'header-color': 'rgb(32, 32, 32)',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'grid-layout': "url('src/assets/grid.svg')"
+      }
+    },
   },
   plugins: [],
 }

@@ -22,18 +22,6 @@
     font-size: 250%;
 }
 
-.link-contato:hover .github{
-    color: rgb(124, 105, 231);
-}
-
-.link-contato:hover .linkedin{
-    color: rgb(127, 197, 255);
-}
-
-.link-contato:hover .instagram{
-    color: #E1306C;
-}
-
 .link-rede{
     display: flex;
     position: absolute;

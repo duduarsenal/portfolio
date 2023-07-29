@@ -6,7 +6,7 @@ function BoxProjects(props) {
     let arrayTecnologias = []
     let i = 0;
     dados.forEach(element => {
-        arrayTecnologias[i] = <p>{element}</p>;
+        arrayTecnologias[i] = <p className='nameTec'>{element}</p>;
         i++;
     });
 

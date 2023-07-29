@@ -31,43 +31,46 @@ export default function Header(props) {
     setIsMenuClicked(!isMenuClicked)
   }
 
+  const navLinks = [
+    {
+      id: 'aboutme',
+      icon: <BsFillFileEarmarkPersonFill/>,
+      link: 'Sobre mim'
+    },
+    {
+      id: 'meusconhecimentos',
+      icon: <BiBookBookmark/>,
+      link: 'Tecnologias'
+    },
+    {
+      id: 'myprojects',
+      icon: <GoProject />,
+      link: 'Projetos'
+    }
+  ]
+
   return (
-    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 mb-[10px]" id="headerTop">
-      <div className={`navbar ${menu_class} md:flex-row headerLinks h-[100%] max-w-[1360px] flex-col items-center justify-between m-auto px-[20px]`}>
-        <Link to="aboutme" smooth={true} duration={400} offset={props.view_width} onClick={updateMenu}>
-          <div>
-            <BsFillFileEarmarkPersonFill className="header-icon" />
-            <span className="header-text">Sobre mim</span>
-          </div>
-        </Link>
-        <Link to="meusconhecimentos" smooth={true} duration={400} offset={props.view_width} onClick={updateMenu}>
-          <div>
-            <BiBookBookmark className="header-icon" />
-            <span className="header-text">Tecnologias</span>
-          </div>
-        </Link>
-        <div className="meuport-on flex justify-center items-center px-3">
-            <BsCodeSlash className="header-icon text-[310%] text-[#FF2D2D]"/>
+    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3" id="headerTop">
+      <navbar className={`navbar ${menu_class} md:flex-row headerLinks h-[100%] max-w-[1360px] flex-col items-center justify-between m-auto px-[20px]`}>
+        <div className="flex justify-center items-center px-3 h-full">
+              <BsCodeSlash className="text-[310%] text-[#FF2D2D]"/>
+              <p className="text-[150%] mx-3">
+                Meu Porfólio
+              </p>
         </div>
-        <Link to="myprojects" smooth={true} duration={400} offset={props.view_width} onClick={updateMenu}>
-          <div>
-            <GoProject className="header-icon" />
-            <span className="header-text">Projetos</span>
-          </div>
-        </Link>
-        <Link to="contactme" smooth={true} duration={400}  offset={props.view_width} onClick={updateMenu}>
-          <div>
-            <MdPermContactCalendar className="header-icon" />
-            <span className="header-text">Contato</span>
-          </div>
-        </Link>
-      </div>
-      <div className="meuport flex justify-center items-center px-3">
-        <BsCodeSlash className="header-icon text-[200%]"/>
-        <p className="text-[150%] mx-3">
-          Meu Porfólio
-        </p>
-      </div>
+        <ul className="flex gap-12 h-full">
+          {
+            navLinks.map((links) => (
+              <li key={links.id} className="px-4 hover:bg-[#9e1f278c] cursor-pointer text-[1.15rem]">
+               <Link to={links.id} smooth={true} duration={400} offset={props.view_width} onClick={updateMenu} className="flex h-full gap-2">
+                  <span className="text-[1.5rem] flex items-center h-full">{links.icon}</span>
+                  <span className="flex items-center h-full font-[300]">{links.link}</span>
+               </Link>
+              </li>
+            ))
+          }
+        </ul>
+      </navbar>
       <GiHamburgerMenu className={`${burger_class} hidden text-[250%]`} onClick={updateMenu} />
       <IoCloseSharp className={`${burger_open} hidden text-[250%]`} onClick={updateMenu} />
     </header>

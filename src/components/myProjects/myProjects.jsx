@@ -12,7 +12,7 @@ export default function MyProjects() {
   ];
 
   return (
-    <div className="myprojects w-[100%] max-w-[1360px] m-auto">
+    <div className="myprojects w-[100%] max-w-[1360px] m-auto py-8">
       <div className="flex flex-wrap justify-center">
         <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
           Meus Projetos

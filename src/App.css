@@ -1,4 +1,8 @@
 *{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
     --background-black-t: rgba(32, 32, 32, 0.500);
     --border-red-t: rgba(206, 108, 108, 0.2);
     --background-hover-black: rgba(32, 32, 32, 0.900);
@@ -18,8 +22,9 @@
     left: 50%;
     transform: translate(-50%);
     height: auto;
-    filter: blur(8px) brightness(60%);
+    filter: blur(12px) brightness(40%);
     position: absolute;
+    transform: rotate(180deg);
     z-index: 1;
 }
 .conteudo{
