@@ -30,7 +30,7 @@ export default function ContactMe() {
     },
   ];
   return (
-      <div className="flex w-full justify-between items-center h-max p-8">
+      <div className="flex flex-wrap w-full justify-center xl:justify-between items-center h-max p-8">
         {redes.map((rede) => (
           <div className="flex flex-col items-center h-full justify-evenly relative">
             <a

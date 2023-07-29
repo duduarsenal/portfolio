@@ -50,19 +50,19 @@ export default function Header(props) {
   ]
 
   return (
-    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3" id="headerTop">
+    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 justify-end" id="headerTop">
       <navbar className={`navbar ${menu_class} md:flex-row headerLinks h-[100%] max-w-[1360px] flex-col items-center justify-between m-auto px-[20px]`}>
-        <div className="flex justify-center items-center px-3 h-full">
+        <div className="justify-center items-center px-3 h-full hidden md:flex">
               <BsCodeSlash className="text-[310%] text-[#FF2D2D]"/>
-              <p className="text-[150%] mx-3">
+              <p className="text-[150%] mx-3 hidden lg:block">
                 Meu Porfólio
               </p>
         </div>
-        <ul className="flex gap-12 h-full">
+        <ul className="flex flex-col md:flex-row md:gap-12 h-full w-full md:w-auto">
           {
             navLinks.map((links) => (
-              <li key={links.id} className="px-4 hover:bg-[#9e1f278c] cursor-pointer text-[1.15rem]">
-               <Link to={links.id} smooth={true} duration={400} offset={props.view_width} onClick={updateMenu} className="flex h-full gap-2">
+              <li key={links.id} className="hover:bg-[#9e1f278c] cursor-pointer text-[1.15rem] w-full md:w-auto p-6 md:py-0 md:px-4">
+               <Link to={links.id} smooth={true} duration={400} offset={props.view_width} onClick={updateMenu} className="flex h-full gap-2 justify-center">
                   <span className="text-[1.5rem] flex items-center h-full">{links.icon}</span>
                   <span className="flex items-center h-full font-[300]">{links.link}</span>
                </Link>

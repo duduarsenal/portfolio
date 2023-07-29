@@ -1,6 +1,3 @@
-
-
-
 @media (min-width: 768px){
     .navbar{
         display: flex !important;
@@ -28,10 +25,6 @@
         width: 50% !important;
         justify-content: flex-start !important;
         margin-top: 50px !important;
-    }
-
-    .header-icon{
-        font-size: 0;
     }
     .menu-unclicked{
         display: inherit !important;

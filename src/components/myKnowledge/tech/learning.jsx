@@ -14,7 +14,7 @@ function Learning(props) {
             tecColor: '#fc8464',
         },
         {
-            icon: <SiPhp className='icon-lang text-[#757bd6]'/>,
+            icon: <SiPhp className='icon-lang text-[#757bd6] text-[2.5rem]'/>,
             tecName: 'php',
             tecColor: '#757bd6',
         },

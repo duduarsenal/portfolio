@@ -52,7 +52,6 @@
 
 .title-timeline{
     text-align: center;
-    font-weight: 600;
     margin: 15px;
     color: rgb(255, 245, 245);
     padding: 0 10px;
@@ -71,13 +70,9 @@
 }
 
 .mytimeline-title{
-    font-size: 180%;
+    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1;
-    border-bottom: 3px solid var(--border-red-t);
-    width: 35%;
     text-align: center;
-    border-radius: 10px
 }
 
 @media (max-width: 964px){

@@ -1,8 +1,10 @@
 import React from 'react';
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiPhp } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
+import { BsGit } from "react-icons/bs";
+import { TbBrandMysql } from "react-icons/tb";
 
 
 function Proficient(props) {
@@ -27,6 +29,11 @@ function Proficient(props) {
             icon: <RiReactjsLine className='icon-lang text-[#61dafb]'/>,
             tecName: 'reactjs',
             tecColor: '#61dafb',
+        },
+        {
+            icon: <SiTailwindcss className='icon-lang text-[#0ea5e9]'/>,
+            tecName: 'tailwindcss',
+            tecColor: '#0ea5e9',
         }
     ]
     return (

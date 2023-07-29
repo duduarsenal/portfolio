@@ -26,19 +26,19 @@ export default function Timeline() {
   ]
   return (
     <div className="timeline w-[100%] flex justify-center max-w-[1360px] pb-4">
-      <div className="timeline-content w-[97%] flex flex-col items-center border-solid border-red-transparent bg-black-transparent border-2 h-max my-[10px] rounded overflow-hidden px-2">
-        <h1 className="mytimeline-title text-center font-semibold text-[150%] mt-[10px] sm:text-[200%] w-[80%] sm:w-[35%]">Minha Linha do Tempo</h1>
+      <fieldset className="timeline-content w-[97%] flex flex-col items-center border-solid border-red-transparent bg-black-transparent border-2 h-max my-[10px] rounded overflow-hidden px-2">
+        <legend className="mytimeline-title font-[500] text-[1.5rem] sm:text-[2rem] px-2 border-x-[3px] border-x-red-transparent">Minha Linha do Tempo</legend>
         <ul className="timelineTop mb-[200px] flex justify-evenly items-center w-[90%]">  
         {
           timelines.map((moment) => (
             <li className="itemTimeLine" key={moment.title}>
-              <h1 className="title-timeline">{moment.title}</h1>
-              <p className="desc-timeline">{moment.desc}</p>
+              <h1 className="title-timeline font-[500]">{moment.title}</h1>
+              <p className="desc-timeline font-[300]">{moment.desc}</p>
             </li>
           ))
         }
         </ul>
-      </div>
+      </fieldset>
     </div>
   );
 }
