@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div className='all'>
       <img src="https://ik.imagekit.io/duduzinvdlk/background/redspace_vert.jpg" className='backimg'/>
-      <div className='conteudo bg-grid-layout'>
+      <div className='conteudo'>
         <Header view_width={view_width}/>
         <div className='content1-site flex items-center'>
           <AboutMe />
