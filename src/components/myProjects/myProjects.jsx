@@ -23,7 +23,7 @@ export default function MyProjects() {
               projectLink="https://crudphpdudu.000webhostapp.com"
               projectName="Crud PHP/MySQL"
               projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/crudphp?updatedAt=1691013545356"
-              projectDesc="CRUD de filmes com cadastro, login e listagem. Os usuários podem gerenciar filmes através de adição, edição e exclusão. Implementado com PHP/MySQL e seguindo a estrutura MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
+              projectDesc="Sistema com cadastro e login. Os usuários podem gerenciar filmes através de listagem, adição, edição e exclusão. Implementado com PHP/MySQL e seguindo a estrutura MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
               projectTech="CSS3, JavaScript, PHP, MySQL"
               projectImgWidth="100%"
               projectColor="text-[#ff3232]"
