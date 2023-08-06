@@ -20,14 +20,13 @@ export default function MyProjects() {
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
           <Item>
             <BoxProjects
-              projectLink="https://dudureceitas.surge.sh"
-              projectName="Dudu Receitas"
-              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png"
-              projectDesc={
-                '"Dudu Receitas" foi meu primeiro desenvolvimento. Neste projeto, me concentrei em treinar o uso de JAVASCRIPT para criar funções, estruturas, laços e uma forma de login/autenticação usando localStorage.'
-              }
-              projectTech="HTML5, CSS3, JavaScript"
-              projectColor="text-[#FFC000]"
+              projectLink="https://crudphpdudu.000webhostapp.com"
+              projectName="Crud PHP/MySQL"
+              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/crudphp?updatedAt=1691013545356"
+              projectDesc="CRUD de filmes com cadastro, login e listagem. Os usuários podem gerenciar filmes através de adição, edição e exclusão. Implementado com PHP/MySQL e seguindo a estrutura MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
+              projectTech="CSS3, JavaScript, PHP, MySQL"
+              projectImgWidth="100%"
+              projectColor="text-[#ff3232]"
             />
           </Item>
           <Item>
@@ -56,6 +55,18 @@ export default function MyProjects() {
           </Item>
           <Item>
             <BoxProjects
+              projectLink="https://dudureceitas.surge.sh"
+              projectName="Dudu Receitas"
+              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png"
+              projectDesc={
+                '"Dudu Receitas" foi meu primeiro desenvolvimento. Neste projeto, me concentrei em treinar o uso de JAVASCRIPT para criar funções, estruturas, laços e uma forma de login/autenticação usando localStorage.'
+              }
+              projectTech="HTML5, CSS3, JavaScript"
+              projectColor="text-[#FFC000]"
+            />
+          </Item>
+          <Item>
+            <BoxProjects
               projectLink="https://dudulinktree.vercel.app"
               projectName="Meu Linktree"
               projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/linktree_project.jpg"
@@ -65,18 +76,7 @@ export default function MyProjects() {
               projectColor="text-[#c5eaf9]"
             />
           </Item>
-          <Item>
-            <BoxProjects
-              projectLink="https://crudphpdudu.000webhostapp.com"
-              projectName="Crud PHP/MySQL"
-              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/crudphp?updatedAt=1691013545356"
-              projectDesc="CRUD de filmes com cadastro, login e listagem. Os usuários podem gerenciar filmes através de adição, edição e exclusão. Implementado com PHP/MySQL e seguindo a estrutura MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
-              projectTech="CSS3, JavaScript, PHP, MySQL"
-              projectImgWidth="100%"
-              projectColor="text-[#ff3232]"
-            />
-          </Item>
-          <Item>
+{/*           <Item>
             <BoxProjects
               projectLink="#"
               projectName="Em Andamento"
@@ -86,7 +86,7 @@ export default function MyProjects() {
               projectImgWidth="80%"
               projectColor="text-[#ff726f]"
             />
-          </Item>
+          </Item> */}
         </Carousel>
       </div>
     </div>
