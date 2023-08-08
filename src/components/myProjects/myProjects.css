@@ -1,3 +1,10 @@
+@media (min-width: 1024px) {
+    .rec-swipable{
+        align-items: center;
+        margin-bottom: -1rem;
+    }    
+}
+
 .rec-pagination{
     display: none !important;
 }

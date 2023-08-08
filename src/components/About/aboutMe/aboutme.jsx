@@ -8,8 +8,8 @@ export default function AboutMe() {
   React.useEffect(() => {
     const typed = new Typed(typing.current, {
       strings: [
-        "$ Desenvolvedor Front-End ^1000 `<p>$ npm install</p>` ^1000 `<p>$ installing components...</p>` ^1000 `<p>$ Fetching from source...</p>` ^1000 `$ Added 2 packages, found 0 vulnerabilities...` ",
-        "$ Desenvolvedor Web^1000 `<p>$ npm install</p>` ^1000 `<p>$ installing components...</p>` ^1000 `<p>$ Fetching from source...</p>` ^1000 `$ Added 2 packages, found 0 vulnerabilities...`",
+        "> Desenvolvedor Front-End ^1000 `<p>> npm install</p>` ^1000 `<p>> installing components...</p>` ^1000 `<p>> Fetching from source...</p>` ^1000 `> Added 2 packages, found 0 vulnerabilities...` ",
+        "> Desenvolvedor Web^1000 `<p>> npm install</p>` ^1000 `<p>> installing components...</p>` ^1000 `<p>> Fetching from source...</p>` ^1000 `> Added 2 packages, found 0 vulnerabilities...`",
       ],
       typeSpeed: 50,
       backSpeed: 5,

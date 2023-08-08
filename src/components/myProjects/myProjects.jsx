@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import BoxProjects from "./boxProjects/boxProjects";
 import LfMarketing from "../../assets/lfmarketing.png";
 import Carousel from "@itseasy21/react-elastic-carousel";
 import Item from "./Item";
 import "./myProjects.css";
+import { useInView } from "framer-motion"
 
 export default function MyProjects() {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    //Verifica se o component esta na view ou não
+  }, [isInView]);
+
   const breakPoints = [
     { width: 768, itemsToShow: 1 },
     { width: 1024, itemsToShow: 2 },
   ];
 
   return (
-    <div className="myprojects w-[100%] max-w-[1360px] m-auto py-8">
+    <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} myprojects w-[100%] max-w-[1360px] m-auto transition-all duration-300`}>
       <div className="flex flex-wrap justify-center">
-        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
+        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px] lg:-mb-4">
           Meus Projetos
         </h1>
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
           <Item>
+            <span ref={ref}></span>
             <BoxProjects
               projectLink="https://dudureceitas.surge.sh"
               projectName="Dudu Receitas"

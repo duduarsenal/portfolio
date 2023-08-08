@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Proficient from './tech/proficient'
 import Learning from './tech/learning'
 import WannaStudy from './tech/wannaStudy'
 import ContainerTech from "./containerTech/containerTech";
-
+import { useInView } from "framer-motion"
 
 export default function MyKnowledge() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    //Verifica se o component esta na view ou não
+  }, [isInView]);
+
   // função para varrer o array de tecnologias de cada "nivel" em cada um dos componentes
   function mapTech(items){
     return (
@@ -20,13 +27,13 @@ export default function MyKnowledge() {
   }
 
   return (
-    <div className="w-[100%] max-w-[1360px]" id="meusconhecimentos">
+    <div className={`opacity-100 ${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} w-[100%] max-w-[1360px] transition-all duration-300`} id="meusconhecimentos">
       <div className="flex flex-col items-center justify-center px-[15px]">
         <h1 className="text-center font-[500] text-[1.8rem] sm:text-[200%]">Tecnologias</h1>
         <div className="flex flex-col justify-evenly items-start h-max w-full">
           {/* Container para as tecnologias */}
           <ContainerTech infos={<Proficient mapTech={mapTech}/>} infoTitle="Tenho conhecimento"/>
-          <ContainerTech infos={<Learning mapTech={mapTech}/>} infoTitle="Aprendendo"/>
+          <div ref={ref}><ContainerTech infos={<Learning mapTech={mapTech}/>} infoTitle="Aprendendo"/></div>
           <ContainerTech infos={<WannaStudy mapTech={mapTech}/>} infoTitle="Pretendo Estudar"/>
         </div>
       </div>

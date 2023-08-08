@@ -11,6 +11,7 @@ import AboutMe from './components/About/aboutMe/aboutme'
 import Timeline from './components/About/timeline/timeline'
 
 export default function App() {
+
   const [view_width, setViewWidth] = useState(0)
 
   useEffect(() => {

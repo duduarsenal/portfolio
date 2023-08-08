@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./timeline.css";
+import { useInView } from "framer-motion"
+
 
 export default function Timeline() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    //Verifica se o component esta na view ou não
+  }, [isInView]);
+
   const timelines = [ 
     {
       title: '2019/1',
@@ -25,9 +34,9 @@ export default function Timeline() {
     },
   ]
   return (
-    <div className="timeline w-[100%] flex justify-center max-w-[1360px] pb-4">
+    <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} timeline w-[100%] flex flex-col items-center .justify-center max-w-[1360px] pb-4 transition-all duration-300`} id="timeline">
+      <h1 className="mytimeline-title font-[500] text-[1.5rem] sm:text-[2rem] px-2 py-4">Minha Linha do Tempo</h1>
       <fieldset className="timeline-content w-[97%] flex flex-col items-center border-solid border-red-transparent bg-black-transparent border-2 h-max my-[10px] rounded overflow-hidden px-2">
-        <legend className="mytimeline-title font-[500] text-[1.5rem] sm:text-[2rem] px-2 border-x-[3px] border-x-red-transparent">Minha Linha do Tempo</legend>
         <ul className="timelineTop mb-[200px] flex justify-evenly items-center w-[90%]">  
         {
           timelines.map((moment) => (
@@ -37,6 +46,7 @@ export default function Timeline() {
             </li>
           ))
         }
+        <span ref={ref}></span>
         </ul>
       </fieldset>
     </div>
