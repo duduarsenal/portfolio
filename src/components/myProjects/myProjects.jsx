@@ -23,12 +23,22 @@ export default function MyProjects() {
   return (
     <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} myprojects w-[100%] max-w-[1360px] m-auto transition-all duration-300`}>
       <div className="flex flex-wrap justify-center">
-        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
+        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]" ref={ref}>
           Meus Projetos
         </h1>
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
+        <Item>
+            <BoxProjects
+              projectLink="https://dudu-ytdata.vercel.app"
+              projectName="Youtube Data"
+              projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/youtube-data?updatedAt=1691947685536"
+              projectDesc="Foco no estudo de APIs e na integração back-end/front-end. Ao inserir usuário/link do YouTube, extrai estatísticas do canal, incluindo assinantes/visualizações, exibindo dados dos últimos 4 vídeos: likes, comentários etc."
+              projectTech="ReactJS, TailwindCSS, NodeJS, Express"
+              projectImgWidth="100%"
+              projectColor="text-[#4361ee]"
+            />
+          </Item>
           <Item>
-            <span ref={ref}></span>
             <BoxProjects
               projectLink="https://crudphpdudu.000webhostapp.com"
               projectName="Crud PHP/MySQL"
