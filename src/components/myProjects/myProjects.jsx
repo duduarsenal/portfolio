@@ -23,7 +23,7 @@ export default function MyProjects() {
   return (
     <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} myprojects w-[100%] max-w-[1360px] m-auto transition-all duration-300`}>
       <div className="flex flex-wrap justify-center">
-        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]" ref={ref}>
+        <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
           Meus Projetos
         </h1>
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
@@ -36,6 +36,7 @@ export default function MyProjects() {
               projectTech="ReactJS, TailwindCSS, NodeJS, Express"
               projectImgWidth="100%"
               projectColor="text-[#4361ee]"
+              thatRef={ref}
             />
           </Item>
           <Item>
