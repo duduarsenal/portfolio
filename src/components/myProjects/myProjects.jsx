@@ -22,10 +22,11 @@ export default function MyProjects() {
 
   return (
     <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} myprojects w-[100%] max-w-[1360px] m-auto transition-all duration-300`}>
-      <div className="flex flex-wrap justify-center">
+      <div className="relative flex flex-wrap justify-center">
         <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
           Meus Projetos
         </h1>
+        <input type="text" className="absolute opacity-0 bottom-96" ref={ref}/>
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
         <Item>
             <BoxProjects
@@ -36,7 +37,6 @@ export default function MyProjects() {
               projectTech="ReactJS, TailwindCSS, NodeJS, Express"
               projectImgWidth="100%"
               projectColor="text-[#4361ee]"
-              thatRef={ref}
             />
           </Item>
           <Item>
@@ -44,7 +44,7 @@ export default function MyProjects() {
               projectLink="https://crudphpdudu.000webhostapp.com"
               projectName="Crud PHP/MySQL"
               projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/crudphp?updatedAt=1691013545356"
-              projectDesc="Sistema com cadastro e login. Os usuários podem gerenciar filmes através de listagem, adição, edição e exclusão. Implementado com PHP/MySQL e seguindo a estrutura MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
+              projectDesc="Sistema com cadastro e login. É possivel gerenciar filmes através de listagem, adição, edição e exclusão. Feito com PHP/MySQL e seguindo o padrão MVC para melhor organização dos arquivos, visando o aprendizado em Tecnologias Web."
               projectTech="CSS3, JavaScript, PHP, MySQL"
               projectImgWidth="100%"
               projectColor="text-[#ff3232]"
