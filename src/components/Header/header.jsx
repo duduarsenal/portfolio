@@ -1,9 +1,6 @@
 import { React, useState } from "react";
 import "./header.css";
-import { BsFillFileEarmarkPersonFill, BsCodeSlash } from 'react-icons/bs'
-import { BiBookBookmark } from 'react-icons/bi'
-import { GoProject } from "react-icons/go";
-import { MdPermContactCalendar } from 'react-icons/md'
+import { BsCodeSlash } from 'react-icons/bs'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoCloseSharp } from 'react-icons/io5'
@@ -50,7 +47,7 @@ export default function Header(props) {
   ]
 
   return (
-    <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 justify-end" id="headerTop">
+    <header className='md:h-[50px] w-full h-max bg-header-color z-3 justify-end' id="headerTop">
       <nav className={`navbar ${menu_class} md:flex-row headerLinks h-[100%] max-w-[1360px] flex-col items-center justify-between m-auto px-[20px]`}>
         <div className="justify-center items-center px-3 h-full hidden md:flex">
               <BsCodeSlash className="text-[310%] text-[#FF2D2D] w-10"/>

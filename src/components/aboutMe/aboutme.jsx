@@ -3,7 +3,7 @@ import "./aboutme.css";
 import Typed from "typed.js";
 import ContactMe from "./contactMe/contactMe";
 
-export default function AboutMe() {
+export default function AboutMe(props) {
 
   const typing = React.useRef(null);
   React.useEffect(() => {
@@ -27,10 +27,10 @@ export default function AboutMe() {
 
   return (
     <div
-      className="flex flex-col md:flex-row h-max py-8 justify-evenly max-w-[1360px]"
+      className={`${props.view_width ? 'mt-8' : 'mt-0'} flex flex-col md:flex-row h-max py-8 justify-evenly max-w-[1360px]`}
       id="aboutme"
     >
-      <div className="flex flex-col px-4 items-start md:justify-start m-auto w-full md:w-[45%] min-h-[20rem] py-4">
+      <div className="flex flex-col px-4 items-start md:justify-start md:pt-0 pt-[3rem] m-auto w-full md:w-[45%] min-h-[20rem] py-4">
         <p className="text-[1.6rem] md:text-[2rem] text-[#ff3232]">Eduardo Souza <span className="text-[0.75rem] font-[300] text-[#ff323290]">(dudu)</span></p>
         <div className="flex">
           <span className="flex flex-col text-[1.25rem] md:text-[1.5rem] font-[300]" ref={typing}></span>

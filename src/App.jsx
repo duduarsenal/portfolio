@@ -11,7 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 // import Timeline from './components/About/timeline/timeline'
 
 export default function App() {
-  const [view_width, setViewWidth] = useState(0);
+  const [viewWidth, setViewWidth] = useState(0);
 
   useEffect(() => {
     if (window.innerWidth > 768) {
@@ -28,12 +28,12 @@ export default function App() {
         className="backimg"
       />
       <div className="conteudo flex flex-col items-center">
-        <Header view_width={view_width} />
-        <AboutMe />
+        <Header view_width={viewWidth}/>
+        <AboutMe view_width={viewWidth}/>
         <MyKnowledge />
         <MyProjects />
         <Analytics />
-        <SetaUp view_width={view_width} />
+        <SetaUp view_width={viewWidth} />
       </div>
     </div>
   );
