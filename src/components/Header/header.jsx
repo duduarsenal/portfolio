@@ -34,17 +34,17 @@ export default function Header(props) {
   const navLinks = [
     {
       id: 'aboutme',
-      icon: <BsFillFileEarmarkPersonFill/>,
+      // icon: <BsFillFileEarmarkPersonFill/>,
       link: 'Sobre mim'
     },
     {
       id: 'meusconhecimentos',
-      icon: <BiBookBookmark/>,
+      // icon: <BiBookBookmark/>,
       link: 'Tecnologias'
     },
     {
       id: 'myprojects',
-      icon: <GoProject />,
+      // icon: <GoProject />,
       link: 'Projetos'
     }
   ]
@@ -53,7 +53,7 @@ export default function Header(props) {
     <header className="md:h-[50px] w-[100%] h-max bg-header-color z-3 justify-end" id="headerTop">
       <nav className={`navbar ${menu_class} md:flex-row headerLinks h-[100%] max-w-[1360px] flex-col items-center justify-between m-auto px-[20px]`}>
         <div className="justify-center items-center px-3 h-full hidden md:flex">
-              <BsCodeSlash className="text-[310%] text-[#FF2D2D]"/>
+              <BsCodeSlash className="text-[310%] text-[#FF2D2D] w-10"/>
               <p className="text-[150%] mx-3 hidden lg:block">
                 Meu Porfólio
               </p>
@@ -61,10 +61,11 @@ export default function Header(props) {
         <ul className="flex flex-col md:flex-row md:gap-12 h-full w-full md:w-auto">
           {
             navLinks.map((links) => (
-              <li key={links.id} className="hover:bg-[#9e1f278c] cursor-pointer text-[1.15rem] w-full md:w-auto p-6 md:py-0 md:px-4">
-               <Link to={links.id} smooth={true} duration={400} offset={props.view_width} onClick={updateMenu} className="flex h-full gap-2 justify-center">
-                  <span className="text-[1.5rem] flex items-center h-full">{links.icon}</span>
-                  <span className="flex items-center h-full font-[300]">{links.link}</span>
+              <li key={links.id} className="[&_div]:hover:h-full cursor-pointer flex items-center text-[1.15rem] w-full md:w-auto p-6 md:py-0 md:px-4">
+               <Link to={links.id} smooth={true} duration={400} offset={props.view_width} onClick={updateMenu} className="relative flex m-auto w-full py-1 px-2 gap-2 justify-center">
+                  {/* <span className="text-[1.5rem] flex items-center h-full">{links.icon}</span> */}
+                  <span className="flex items-center h-full font-[400] z-10">{links.link}</span>
+                  <div className="bg-[#ff3232] w-full h-1 transition-all duration-300 absolute bottom-0 rounded-lg"></div>
                </Link>
               </li>
             ))

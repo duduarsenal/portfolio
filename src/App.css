@@ -19,10 +19,8 @@
 
 .backimg{
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
     height: auto;
-    filter: blur(12px) brightness(40%);
+    filter: blur(12px) brightness(20%);
     position: absolute;
     transform: rotate(180deg);
     z-index: 1;

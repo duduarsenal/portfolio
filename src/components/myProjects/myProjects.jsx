@@ -1,19 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import BoxProjects from "./boxProjects/boxProjects";
 import LfMarketing from "../../assets/lfmarketing.png";
 import Carousel from "@itseasy21/react-elastic-carousel";
 import Item from "./Item";
 import "./myProjects.css";
-import { useInView } from "framer-motion"
 
 export default function MyProjects() {
-
-  const ref = useRef(null)
-  const isInView = useInView(ref)
-
-  useEffect(() => {
-    //Verifica se o component esta na view ou não
-  }, [isInView]);
 
   const breakPoints = [
     { width: 768, itemsToShow: 1 },
@@ -21,12 +13,12 @@ export default function MyProjects() {
   ];
 
   return (
-    <div className={`${isInView ? 'lg:opacity-100' : 'lg:opacity-0'} myprojects w-[100%] max-w-[1360px] m-auto transition-all duration-300`}>
+    <div className='myprojects w-[100%] max-w-[1360px] py-8 m-auto transition-all duration-300'>
       <div className="relative flex flex-wrap justify-center">
         <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
           Meus Projetos
         </h1>
-        <input type="text" className="absolute opacity-0 bottom-96" ref={ref}/>
+        <input type="text" className="absolute opacity-0 bottom-96" />
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
         <Item>
             <BoxProjects

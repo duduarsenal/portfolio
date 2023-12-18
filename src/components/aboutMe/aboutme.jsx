@@ -1,9 +1,10 @@
 import React from "react";
 import "./aboutme.css";
 import Typed from "typed.js";
-import ContactMe from "../../contactMe/contactMe";
+import ContactMe from "./contactMe/contactMe";
 
 export default function AboutMe() {
+
   const typing = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(typing.current, {
@@ -26,7 +27,7 @@ export default function AboutMe() {
 
   return (
     <div
-      className="flex flex-col md:flex-row h-auto min-h-[500px] justify-evenly max-w-[1360px]"
+      className="flex flex-col md:flex-row h-max py-8 justify-evenly max-w-[1360px]"
       id="aboutme"
     >
       <div className="flex flex-col px-4 items-start md:justify-start m-auto w-full md:w-[45%] min-h-[20rem] py-4">

@@ -1,10 +1,10 @@
 import React from 'react';
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
-import { SiJavascript, SiTailwindcss, SiPhp } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiMongodb } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { BsGit } from "react-icons/bs";
-import { TbBrandMysql } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
 
 
 function Proficient(props) {
@@ -21,6 +21,11 @@ function Proficient(props) {
             tecColor: '#0097db',
         },
         {
+            icon: <SiTailwindcss className='icon-lang text-[#0ea5e9]'/>,
+            tecName: 'tailwindcss',
+            tecColor: '#0ea5e9',
+        },
+        {
             icon: <SiJavascript className='icon-lang text-[#f7df1e]'/>,
             tecName: 'javascript',
             tecColor: '#f7df1e',
@@ -31,10 +36,20 @@ function Proficient(props) {
             tecColor: '#61dafb',
         },
         {
-            icon: <SiTailwindcss className='icon-lang text-[#0ea5e9]'/>,
-            tecName: 'tailwindcss',
-            tecColor: '#0ea5e9',
-        }
+            icon: <FaNodeJs className='text-[#8bc500]'/>,
+            tecName: 'nodejs',
+            tecColor: '#8bc500',
+        },
+        {
+            icon: <SiMongodb className='text-[#4faa41]'/>,
+            tecName: 'mongodb',
+            tecColor: '#4faa41',
+        },
+        {
+            icon: <BsGit className='icon-lang text-[#fc8464]'/>,
+            tecName: 'git',
+            tecColor: '#fc8464',
+        },
     ]
     return (
         <>
