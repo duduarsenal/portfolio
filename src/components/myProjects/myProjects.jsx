@@ -6,21 +6,20 @@ import Item from "./Item";
 import "./myProjects.css";
 
 export default function MyProjects() {
-
   const breakPoints = [
     { width: 768, itemsToShow: 1 },
     { width: 1024, itemsToShow: 2 },
   ];
 
   return (
-    <div className='myprojects w-[100%] max-w-[1360px] py-8 m-auto transition-all duration-300'>
+    <div className="myprojects w-[100%] max-w-[1360px] py-8 m-auto transition-all duration-300">
       <div className="relative flex flex-wrap justify-center">
         <h1 className="text-[180%] sm:text-[200%] w-[100%] text-center font-semibold sm:m-0 mt-[15px]">
           Meus Projetos
         </h1>
         <input type="text" className="absolute opacity-0 bottom-96" />
         <Carousel itemsToShow={2} breakPoints={breakPoints}>
-        <Item>
+          <Item>
             <BoxProjects
               projectLink="https://dudu-ytdata.vercel.app"
               projectName="Youtube Data"
@@ -89,7 +88,7 @@ export default function MyProjects() {
               projectColor="text-[#c5eaf9]"
             />
           </Item>
-{/*           <Item>
+          {/*           <Item>
             <BoxProjects
               projectLink="#"
               projectName="Em Andamento"
