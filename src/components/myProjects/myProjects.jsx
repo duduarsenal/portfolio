@@ -67,7 +67,7 @@ export default function MyProjects() {
           </Item>
           <Item>
             <BoxProjects
-              projectLink="https://dudureceitas.surge.sh"
+              projectLink="https://dudureceitas.vercel.app"
               projectName="Dudu Receitas"
               projectImg="https://ik.imagekit.io/duduzinvdlk/projetos/dudureceitas.png"
               projectDesc={
