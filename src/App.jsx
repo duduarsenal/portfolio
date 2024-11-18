@@ -28,12 +28,17 @@ export default function App() {
         className="backimg"
       />
       <div className="conteudo flex flex-col items-center">
-        <Header view_width={viewWidth}/>
+
+        <div className="flex items-center justify-center w-screen h-screen text-4xl font-semibold">
+          EM CONSTRUÇÃO
+        </div>
+
+        {/* <Header view_width={viewWidth}/>
         <AboutMe view_width={viewWidth}/>
         <MyKnowledge />
         <MyProjects />
         <Analytics />
-        <SetaUp view_width={viewWidth} />
+        <SetaUp view_width={viewWidth} /> */}
       </div>
     </div>
   );
